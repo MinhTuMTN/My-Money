@@ -25,6 +25,7 @@ class MainApp extends StatelessWidget {
       child: MaterialApp.router(
         debugShowCheckedModeBanner: false,
         builder: (context, child) {
+          // Testing
           final mq = MediaQuery.of(context);
           return MediaQuery(
             data: mq.copyWith(textScaler: const TextScaler.linear(1.0)),
