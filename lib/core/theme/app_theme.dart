@@ -1,10 +1,12 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 class AppTheme {
   
   // Light Theme (your original theme with minor adjustments for clarity)
   static ThemeData lightTheme = ThemeData(
+    textTheme: GoogleFonts.robotoTextTheme(),
     colorScheme: ColorScheme.fromSeed(
       seedColor: const Color(0xFF429690),
       brightness: Brightness.light,
@@ -28,6 +30,7 @@ class AppTheme {
 
   // Dark Theme (newly created)
   static final ThemeData darkTheme = ThemeData(
+    textTheme: GoogleFonts.robotoTextTheme(),
     colorScheme: ColorScheme.fromSeed(
       seedColor: const Color(0xFF429690), // Consistent seed color
       brightness: Brightness.dark, // Crucial for dark theme
