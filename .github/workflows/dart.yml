@@ -2,6 +2,13 @@ name: iOS-ipa-build
 
 on:
   workflow_dispatch:
+  push:
+    branches:
+      - temp/build-ios
+    paths:
+      - "lib/**"
+      - "ios/**"
+      - "pubspec.yaml"
 
 jobs:
   build-ios:
